@@ -1,0 +1,161 @@
+/*Estilos del cuerpo del documento: 'body'*/
+body {
+    display: flex; /*Modelo de caja flexible dentro del cuerpo del documento*/
+    align-items: center; /*Alineamos vertical todos los elementos hijos al centro*/
+    justify-content: center; /*Alineamos horizontal al centro*/
+    height: 100vh; /*Adaptar la altura al cuerpo al 100% de viewport*/
+    background-image: url(/img/fondo_musica.jpg);
+    background-repeat: no-repeat; /*Que no se repita la imagen estilo mosaico*/
+    background-size: cover; /*Que la imagen se adapte a la pantalla*/
+}
+/*Estilos para un pequeño margen que tiene entre los detalles (titulo y artista) y la barra de reproducción*/
+.my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 0rem !important; /*Quitamos este por estética*/
+}
+/*Estilos para el título*/
+.title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Estilos para el artista*/
+.singer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.border-bottom {
+    border-bottom: 1px solid rgb(219, 219, 78) !important;  /*Color y grosor del borde y el !important para que coja estos colores y no los del bootstrap*/
+}
+/*Estilo principal del elemento 'container'*/
+.container {
+    width: 400px; /*Ancho del contenedor*/
+    background-color: rgb(219, 219, 78); /*Color de fondo del contenedor*/
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 3%;
+}
+/*Estilo de los elementos de 'volume-container'*/
+.volume-container i {
+    margin-right: 5px; /*Margen derecho del elemento 'i' dentro del contenedor a 5 px del borde*/
+}
+/*Elementos de clase 'time' dentro de la id progress, card-footer y "volume-container"*/
+#progress .time,
+.card-footer,
+.volume-container {
+display: flex; /*Usa el modelo de caja flexible para estos elementos*/
+align-items: center;
+justify-content: space-between; /*Distribución los espacios*/
+}
+/*Cambiar estilo del botón de la canción anterior*/
+#prev {
+    background-color: rgb(219, 219, 78); /*Color de fondo*/
+    border-color: black; /*Color del borde*/
+    color: black; /*Color del dibujo del icono*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilo del botón de la canción anterior cuando el cursor está encima*/
+#prev:hover {
+    background-color: black; /*Color de fondo*/
+    border-color: rgb(219, 219, 78); /*Color del borde*/
+    color: rgb(219, 219, 78); /*Color del dibujo del icono*/
+}
+/*Cambiar estilo del botón del play*/
+#play {
+    background-color: rgb(219, 219, 78); /*Color de fondo*/
+    border-color: black; /*Color del borde*/
+    color: black; /*Color del dibujo del icono*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilo del botón de la canción anterior cuando el cursor está encima*/
+#play:hover {
+    background-color: black; /*Color de fondo*/
+    border-color: rgb(219, 219, 78); /*Color del borde*/
+    color: rgb(219, 219, 78); /*Color del dibujo del icono*/
+}
+/*Cambiar estilo del botón de la siguiente canción*/
+#next {
+    background-color: rgb(219, 219, 78); /*Color de fondo*/
+    border-color: black; /*Color del borde*/
+    color: black; /*Color del dibujo del icono*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilo del botón de la canción anterior cuando el cursor está encima*/
+#next:hover {
+    background-color: black; /*Color de fondo*/
+    border-color: rgb(219, 219, 78); /*Color del borde*/
+    color: rgb(219, 219, 78); /*Color del dibujo del icono*/
+}
+/*Cambiar estilo del botón de la lista*/
+.btn-primary {
+    color: black; /*Color de texto*/
+    background-color: rgb(219, 219, 78); /*Color de fondo*/
+    border-color: black; /*Color del borde*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilo del botón de la lista cuando pase el cursor por encima*/
+.btn-primary:hover {
+    background-color: black; /*Color de fondo*/
+    border-color: rgb(219, 219, 78); /*Color del borde*/
+    color: rgb(219, 219, 78); /*Color del dibujo del icono*/
+}
+/*Cambiar estilo del botón de la lista cuando este esté seleccionado*/
+.btn-primary:focus {
+    color: black;
+    background-color: rgb(219, 219, 78); /*Color de fondo*/
+    border-color: black; /*Color del borde*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilos cuando pase por encima el cursor*/
+.list-group-item:hover {
+    color: black;
+    background-color: rgb(219, 219, 78);
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/* Estilo para los elementos li con la clase playing para que se quede fijo cuando estás en dicho elemento de la lista*/
+li.playing {
+    color: black; /*Color de texto*/
+    background-color: rgb(219, 219, 78); /*Cambiar el color de fondo*/
+    box-shadow: none; /*Quitar la sombra azul que se creaba al hacer click en el botón*/
+}
+/*Cambiar estilos del tiempo que está dentro de la lista*/
+.bg-primary {
+    color: rgb(219, 219, 78) !important; /*Color de texto y el !important para que coja estos colores y no los del bootstrap*/
+    background-color: black !important; /*Color de fondo y el !important para que coja estos colores y no los del bootstrap*/
+    border-color: rgb(219, 219, 78) !important; /*Color del borde y el !important para que coja estos colores y no los del bootstrap*/
+    box-shadow: none !important; /*Quitar la sombra azul que se creaba al hacer click en el botón y el !important para que coja estos colores y no los del bootstrap*/
+}
+/*Estilos para cambiar el color de fondo del card-foooter*/
+.card-footer {
+    padding: .5rem 1rem; /*Espacio entre los componentes interiores y el borde*/
+    background-color: white;  /*Color del fondo y el !important para que coja estos colores y no los del bootstrap*/
+    border-top: 1px solid rgb(219, 219, 78) !important;  /*Color y grosor del borde y el !important para que coja estos colores y no los del bootstrap*/ 
+}
+
+
+/*Código para customizar la barra de progreso*/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none; 
+    /*Borde redondeado de la barra de progreso*/
+    border-radius: 10px;
+}
+  
+/*Estilos para la parte posterior del punto para moverla (a la que todavía no ha llegado)*/
+input[type="range"]::-webkit-slider-runnable-track {
+    background: black;
+    border-radius: 10px;
+}
+    
+/*Estilos para la barra de progreso*/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    /*Alto y ancho de la barra y el punto para moverla*/
+    height: 15px;
+    width: 15px;
+    /*Color del punto para mover la barra*/
+    background-color: black;
+    /*Estilos de borde y color del punto para mover la barra de progreso*/
+    border-radius: 50%;
+    border: 2px solid rgb(219, 219, 78);
+    /*Color de relleno de la barra de progreso previa al punto para moverla*/
+    box-shadow: -407px 0 0 400px rgb(219, 219, 78);
+}
